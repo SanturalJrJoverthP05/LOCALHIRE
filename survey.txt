@@ -1,0 +1,53 @@
+NAME:(optional)
+-
+BARANGAY:
+-
+1. Would you prefer to book services online if it saves time and effort?
+YES
+NO
+MAYBE
+
+2. Do you prefer to pay more than usual if the service is booked online?  
+YES
+NO
+MAYBE
+
+3. How often do you use a booking app? (e.g., Angkas, Grab, Move It, Lalamove)
+Daily
+Weekly
+Monthly
+Rarely
+Never
+
+4.  What kind of services do you usually use or need?
+Automotive Service (eg., Mechanic, Auto body technician, Automotive service advisor, Etc.)
+Electric Service (eg., Electrician, Electrical engineer, Electrical technician, Etc.)
+Cleaning Service (eg., House cleaner, Janitor, Carpet cleaner, Etc.)
+Physical Therapy (eg., Physical therapist, Physical therapy assistant, Massage, Manicure and Pedicure, Etc.)
+Maintenance (eg., Maintenance technician, Building maintenance, Equipment maintenance, Etc.)
+Electronics and Communications Technology (eg., Electronics technician, Telecom engineer, Network administrator, Etc.)
+
+Carpentry and Construction (eg., Carpenter, Construction manager, Woodworker, Etc.)
+5. Based on the list of services below, select the services that you find convenient for home service:
+Automotive Service (eg., Mechanic, Auto body technician, Automotive service advisor, Etc.)
+Electric Service (eg., Electrician, Electrical engineer, Electrical technician, Etc.)
+Cleaning Service (eg., House cleaner, Janitor, Carpet cleaner, Etc.)
+Physical Therapy (eg., Physical therapist, Physical therapy assistant, Massage, Manicure and Pedicure, Etc.)
+Maintenance (eg., Maintenance technician, Building maintenance, Equipment maintenance, Etc.)
+Electronics and Communications Technology (eg., Electronics technician, Telecom engineer, Network administrator, Etc.)
+Carpentry and Construction (eg., Carpenter, Construction manager, Woodworker, Etc.)
+
+6. Do you trust contractors recommended by friends?  
+Yes
+No
+Sometimes
+
+7. Would you trust an online contractor who is certified by TESDA with NCII?  
+Yes
+No
+Not Sure
+
+8. Would you hire contractors located nearby your house?  
+Yes
+No
+It depends
