@@ -64,37 +64,55 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'Household_Services', //General_physician
+        speciality: 'Household Services', //General_physician
         image: household         //General_physician
     },
     {
-        speciality: 'Electronc_Repair_Services', //Gynecologist
+        speciality: 'Electronic Repair Services', //Gynecologist
         image: technician         //Gynecologist
     },
     {
-        speciality: 'Automotive_Services', //Dermatologist
+        speciality: 'Automotive Services', //Dermatologist
         image: mechanic         //Dermatologist
     },
     {
-        speciality: 'Electric_Services', //Pediatrician
+        speciality: 'Electric Services', //Pediatrician
         image: electrician         //Pediatrician
     },
     {
-        speciality: 'Transport_Logistics_Services', //Neurologist
+        speciality: 'Transport Logistics Services', //Neurologist
         image: transport         //Neurologist
     },
     {
-        speciality: 'Cleaning_Services', //Gastroenterologist
+        speciality: 'Cleaning Services', //Gastroenterologist
         image: cleaning         //Gastroenterologist
     },
 ]
 
-export const doctors = [
+/**
+ * An array of contractor objects, each representing a medical professional with various details.
+ * 
+ * @typedef {Object} Contractor
+ * @property {string} _id - Unique identifier for the contractor.
+ * @property {string} name - Name of the contractor.
+ * @property {string} image - Image URL or path of the contractor.
+ * @property {string} speciality - Speciality of the contractor.
+ * @property {string} degree - Degree of the contractor.
+ * @property {string} experience - Experience of the contractor in years.
+ * @property {string} about - Description about the contractor.
+ * @property {number} fees - Consultation fees of the contractor.
+ * @property {Object} address - Address of the contractor.
+ * @property {string} address.line1 - First line of the address.
+ * @property {string} address.line2 - Second line of the address.
+ * 
+ * @type {Contractor[]}
+ */
+export const contractors = [
     {
         _id: 'doc1',
         name: 'Dr. Richard James',
         image: doc1,
-        speciality: 'General Physician',
+        speciality: 'Electronic Repair Services',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',

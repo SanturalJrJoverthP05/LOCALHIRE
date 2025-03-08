@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import SpecialityMenu from '../components/SpecialityMenu'
-import TopDoctors from '../components/TopDoctors'
+import TopContractors from '../components/TopContractors'
 import Banner from '../components/Banner'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Header />
       <SpecialityMenu />
-      <TopDoctors />
+      <TopContractors />
       <Banner />
     </div>
   )

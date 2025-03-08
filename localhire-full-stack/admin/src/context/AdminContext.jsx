@@ -12,17 +12,17 @@ const AdminContextProvider = (props) => {
     const [aToken, setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '')
 
     const [appointments, setAppointments] = useState([])
-    const [doctors, setDoctors] = useState([])
+    const [contractors, setContractors] = useState([])
     const [dashData, setDashData] = useState(false)
 
-    // Getting all Doctors data from Database using API
-    const getAllDoctors = async () => {
+    // Getting all Contractors data from Database using API
+    const getAllContractors = async () => {
 
         try {
 
-            const { data } = await axios.get(backendUrl + '/api/admin/all-doctors', { headers: { aToken } })
+            const { data } = await axios.get(backendUrl + '/api/admin/all-contractors', { headers: { aToken } })
             if (data.success) {
-                setDoctors(data.doctors)
+                setContractors(data.contractors)
             } else {
                 toast.error(data.message)
             }
@@ -33,13 +33,13 @@ const AdminContextProvider = (props) => {
 
     }
 
-    const addDoctor = async () => {
+    const addContractor = async () => {
 
         try {
 
-            const { data } = await axios.get(backendUrl + '/api/admin/add-doctors', { headers: { aToken } })
+            const { data } = await axios.get(backendUrl + '/api/admin/add-contractors', { headers: { aToken } })
             if (data.success) {
-                setDoctors(data.doctors)
+                setContractors(data.contractors)
             } else {
                 toast.error(data.message)
             }
@@ -50,14 +50,14 @@ const AdminContextProvider = (props) => {
 
     }
     
-    // Function to change doctor availablity using API
+    // Function to change contractor availablity using API
     const changeAvailability = async (docId) => {
         try {
 
             const { data } = await axios.post(backendUrl + '/api/admin/change-availability', { docId }, { headers: { aToken } })
             if (data.success) {
                 toast.success(data.message)
-                getAllDoctors()
+                getAllContractors()
             } else {
                 toast.error(data.message)
             }
@@ -130,15 +130,15 @@ const AdminContextProvider = (props) => {
 
     const value = {
         aToken, setAToken,
-        doctors,
-        getAllDoctors,
+        contractors,
+        getAllContractors,
         changeAvailability,
         appointments,
         getAllAppointments,
         getDashData,
         cancelAppointment,
         dashData,
-        addDoctor
+        addContractor
     }
 
     return (

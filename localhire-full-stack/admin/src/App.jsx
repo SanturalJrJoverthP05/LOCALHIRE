@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { DoctorContext } from './context/DoctorContext';
+import { ContractorContext } from './context/ContractorContext';
 import { AdminContext } from './context/AdminContext';
 import { Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
@@ -8,16 +8,16 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Dashboard from './pages/Admin/Dashboard';
 import AllAppointments from './pages/Admin/AllAppointments';
-import AddDoctor from './pages/Admin/AddDoctor';
-import DoctorsList from './pages/Admin/DoctorsList';
+import AddContractor from './pages/Admin/AddContractor';
+import ContractorsList from './pages/Admin/ContractorsList';
 import Login from './pages/Login';
-import DoctorAppointments from './pages/Doctor/DoctorAppointments';
-import DoctorDashboard from './pages/Doctor/DoctorDashboard';
-import DoctorProfile from './pages/Doctor/DoctorProfile';
+import ContractorAppointments from './pages/Contractor/ContractorAppointments';
+import ContractorDashboard from './pages/Contractor/ContractorDashboard';
+import ContractorProfile from './pages/Contractor/ContractorProfile';
 
 const App = () => {
 
-  const { dToken } = useContext(DoctorContext)
+  const { dToken } = useContext(ContractorContext)
   const { aToken } = useContext(AdminContext)
 
   return dToken || aToken ? (
@@ -30,11 +30,11 @@ const App = () => {
           <Route path='/' element={<></>} />
           <Route path='/admin-dashboard' element={<Dashboard />} />
           <Route path='/all-appointments' element={<AllAppointments />} />
-          <Route path='/add-doctor' element={<AddDoctor />} />
-          <Route path='/doctor-list' element={<DoctorsList />} />
-          <Route path='/doctor-dashboard' element={<DoctorDashboard />} />
-          <Route path='/doctor-appointments' element={<DoctorAppointments />} />
-          <Route path='/doctor-profile' element={<DoctorProfile />} />
+          <Route path='/add-contractor' element={<AddContractor />} />
+          <Route path='/contractor-list' element={<ContractorsList />} />
+          <Route path='/contractor-dashboard' element={<ContractorDashboard />} />
+          <Route path='/contractor-appointments' element={<ContractorAppointments />} />
+          <Route path='/contractor-profile' element={<ContractorProfile />} />
         </Routes>
       </div>
     </div>
